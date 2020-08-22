@@ -23,7 +23,7 @@ class App extends Component {
             about={project.about}
             repository={project.repository}
             heroku={project.heroku}
-            />
+          />
         ))}
         <Contact />
       </Router>

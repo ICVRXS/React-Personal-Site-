@@ -1,6 +1,12 @@
 import React from "react";
 import {Container, Row, Col, CardGroup, Card} from "react-bootstrap";
 
+function hasHeroku(props) {
+    if (props.heroku){
+        return <small class="text-muted"><a href={props.heroku} target="_blank">Repository</a></small>;
+    }
+}
+
 function ProjectCard(props) {
     return (
         <Container>
@@ -16,6 +22,7 @@ function ProjectCard(props) {
                                 </Card.Body>
                                 <Card.Footer>
                                     <small class="text-muted"><a href={props.repository} target="_blank">Repository</a></small>
+                                    <hasHeroku />
                                 </Card.Footer>
                             </Card>
                         </Col>
