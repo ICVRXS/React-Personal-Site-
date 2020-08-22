@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "name": "Daily Planner",
+        "image": "https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png",
+        "about": "A daily planner which saves your data and colors each hour element based on the time of pageload.",
+        "repository": "https://github.com/ICVRXS/5.Daily_Planner"
+    },
+    {
+        "id": 2,
+        "name": "Weather Dashboard",
+        "image": "https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png",
+        "about": "A dashboard where you can enter your location and find the current weather as well as 5 day forecasts.",
+        "repository": "https://github.com/ICVRXS/6.Weather_Dashboard"
+    },
+    {
+        "id": 3,
+        "name": "Weather Event Planner",
+        "image": "https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png",
+        "about": "App that finds weather in a given area and presents the user with activities appropriate for the weather. WIP.",
+        "repository": "https://github.com/billyhao12/Weather-Event-Planner"
+    },
+    {
+        "id": 4,
+        "name": "ReadeMe Generator",
+        "image": "https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png",
+        "about": "An app to create easier ReadMe files through the terminal in Visual Studio Code.",
+        "repository": "https://github.com/ICVRXS/README_Generator/tree/master/Develop"
+    },
+    {
+        "id": 5,
+        "name": "Note Taker",
+        "image": "https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png",
+        "about": "A notepad app which allows the user to save, retrieve, and edit notes from a database.",
+        "repository": "https://github.com/ICVRXS/Note-Taker",
+        "heroku": "https://dashboard.heroku.com/apps/powerful-basin-75195"
+    },
+    {
+        "id": 6,
+        "name": "Inventory Keeper",
+        "image": "https://breakthrough.org/wp-content/uploads/2018/10/default-placeholder-image.png",
+        "about": "Full stack application to keep track of inventory in a database. Themed after NASA for fun.",
+        "repository": "https://github.com/csipe24/Inventory-Keeper",
+        "heroku": "https://dashboard.heroku.com/apps/inventory-keeper-uw-bootcamp"
+    }
+]
