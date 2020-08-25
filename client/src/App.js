@@ -3,7 +3,7 @@ import './App.css';
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ProjectCard from "./components/ProjectCard";
-import Nav from "./components/Nav";
+import NavBar from "./components/Nav";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import projects from "./projects.json";
 import {Jumbotron} from "react-bootstrap";
@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <Router>
           <Jumbotron>
-            {/* <Nav /> */}
+            <NavBar />
             <Switch>
               <Route exact path={["/", "/about", "/home"]}>
                 <About />

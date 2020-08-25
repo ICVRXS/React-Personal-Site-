@@ -4,11 +4,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h3 {
+h1, h3, h5 {
   font-family: 'Alata', sans-serif;
 }
 
-p {
+p, a {
   font-family: 'Poppins', sans-serif;
 }
 
