@@ -16,55 +16,32 @@ class App extends Component {
   render() {
     return (
       <Router>
-        <Switch>
           <Jumbotron>
-            <Nav />
-            <Route exact path={["/", "/about", "/home"]}>
-              <About />
-            </Route>
-            <Route exact path={["/portfolio"]}>
-              {this.state.projects.map(project => (
-                <ProjectCard
-                  id={project.id}
-                  name={project.name}
-                  image={project.image}
-                  about={project.about}
-                  repository={project.repository}
-                  heroku={project.heroku}
-                  />
-              ))}
+            {/* <Nav /> */}
+            <Switch>
+              <Route exact path={["/", "/about", "/home"]}>
+                <About />
               </Route>
-              <Route exact path={["/contact"]}>
-                <Contact />
-              </Route>
-            </Jumbotron>
-        </Switch>
+              <Route exact path={["/portfolio"]}>
+                {this.state.projects.map(project => (
+                  <ProjectCard
+                    id={project.id}
+                    name={project.name}
+                    image={project.image}
+                    about={project.about}
+                    repository={project.repository}
+                    heroku={project.heroku}
+                    />
+                ))}
+                </Route>
+                <Route exact path={["/contact"]}>
+                  <Contact />
+                </Route>
+              </Switch>
+          </Jumbotron>
       </Router>
     );
   }
 }
 
 export default App;
-
-{/* <Router>
-<div>
-  <Switch>
-    <Route exact path={["/", "/about"]}>
-      <About />
-    </Route>
-    <Route exact path={["/portfolio"]}>
-      <ProjectCard
-          id={project.id}
-          name={project.name}
-          image={project.image}
-          about={project.about}
-          repository={project.repository}
-          heroku={project.heroku}
-      />
-    </Route>
-    <Route exact path={["/contact"]}>
-      <Contact />
-    </Route>
-  </Switch>
-</div>
-</Router> */}

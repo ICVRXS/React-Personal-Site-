@@ -1,6 +1,7 @@
 import React from "react";
 import {Container, Row, Col, CardGroup, Card} from "react-bootstrap";
 
+//attempt to make a conditional that recognizes whether the project has a heroku link or not
 function hasHeroku(props) {
     if (props.heroku){
         return <small class="text-muted"><a href={props.heroku} target="_blank">Repository</a></small>;
