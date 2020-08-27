@@ -6,7 +6,7 @@ import ProjectCard from "./components/ProjectCard";
 import NavBar from "./components/Nav";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import projects from "./projects.json";
-import {Jumbotron} from "react-bootstrap";
+import { Container } from 'react-bootstrap';
 
 class App extends Component {
   state = {
@@ -16,7 +16,7 @@ class App extends Component {
   render() {
     return (
       <Router>
-          <Jumbotron>
+          <Container className="px-0">
             <NavBar />
             <Switch>
               <Route exact path={["/", "/about", "/home"]}>
@@ -38,7 +38,7 @@ class App extends Component {
                   <Contact />
                 </Route>
               </Switch>
-          </Jumbotron>
+          </Container>
       </Router>
     );
   }

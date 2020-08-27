@@ -1,7 +1,16 @@
+html {
+  background-color: #343A40;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #343A40;
+}
+
+#root {
+  background-color: #343A40;
 }
 
 h1, h3, h5 {
@@ -17,9 +26,14 @@ code {
     monospace;
 }
 
-.jumbotron {
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
   margin-top: 5rem;
   margin-bottom: 5rem;
   margin-left: 20rem;
   margin-right: 20rem;
+  padding-bottom: 1px;
+  padding-left: none;
+  padding-right: none;
+  background-color: slategray;
 }
+
