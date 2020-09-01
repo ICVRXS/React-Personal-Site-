@@ -23,20 +23,11 @@ class App extends Component {
                 <About />
               </Route>
               <Route exact path={["/portfolio"]}>
-                {this.state.projects.map(project => (
-                  <ProjectCard
-                    id={project.id}
-                    name={project.name}
-                    image={project.image}
-                    about={project.about}
-                    repository={project.repository}
-                    heroku={project.heroku}
-                    />
-                ))}
-                </Route>
-                <Route exact path={["/contact"]}>
-                  <Contact />
-                </Route>
+                <ProjectCard />
+              </Route>
+              <Route exact path={["/contact"]}>
+                <Contact />
+              </Route>
               </Switch>
           </Container>
       </Router>
